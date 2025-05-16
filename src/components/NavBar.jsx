@@ -2,7 +2,7 @@
 // Description: Navigation bar component.
 
 import React from 'react';
-import { Menu, X } from 'lucide-react'; // Icons for mobile menu
+import { Menu, X } from 'lucide-react';
 
 const Navbar = ({ navLinks, activeSection, scrollToSection, isMobileMenuOpen, setIsMobileMenuOpen, colors }) => {
   return (
@@ -14,7 +14,7 @@ const Navbar = ({ navLinks, activeSection, scrollToSection, isMobileMenuOpen, se
           onClick={(e) => { e.preventDefault(); scrollToSection('home'); }} 
           className={`text-2xl font-bold ${colors.primaryText}`}
         >
-          Hazein Finance
+          HazeinFinance
         </a>
 
         {/* Desktop Navigation Links */}
