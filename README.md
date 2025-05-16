@@ -1,4 +1,4 @@
-# Hazen Finance - Portfolio Website
+# HazeinFinance - Portfolio Website
 
 Welcome to HazeinFinance portfolio website! This is currently a static website built to showcase the services and work processes of HazeinFinance, a company specializing in financial consulting, investment portfolio management, and wealth management.
 
