@@ -1,0 +1,35 @@
+/* FILE: src/index.css
+Description: Global CSS styles for the application.
+Includes Tailwind CSS base styles and custom global animations. */
+
+/* Ensure Tailwind CSS is set up in your project. 
+  Typically, you'd have a tailwind.config.js and postcss.config.js,
+  and import Tailwind's base, components, and utilities directives here or in your main CSS file.
+  For Vite, it's common to have:
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+*/
+
+/* Global animation styles previously in HeroSection */
+.animation-delay-300 { animation-delay: 0.3s; }
+.animation-delay-600 { animation-delay: 0.6s; }
+.animation-delay-900 { animation-delay: 0.9s; }
+
+@keyframes fade-in-down {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes fade-in-up {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in-down { 
+  opacity: 0; /* Start hidden for JS-driven animation via IntersectionObserver or initial load */
+  animation: fade-in-down 0.5s ease-out forwards; 
+}
+.animate-fade-in-up { 
+  opacity: 0; /* Start hidden */
+  animation: fade-in-up 0.5s ease-out forwards; 
+}
