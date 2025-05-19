@@ -3,7 +3,7 @@
 // It defines the overall structure, manages navigation state, and assembles different sections.
 
 import React, { useState, useEffect, useRef } from 'react';
-import Navbar from './components/Navbar';
+import NavBar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import AboutUsSection from './components/AboutUsSection';
 import ServicesSection from './components/ServicesSection';
